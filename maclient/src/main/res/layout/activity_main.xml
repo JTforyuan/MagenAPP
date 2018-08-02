@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.maclient.Views.AudioRecordView
+        android:id="@+id/image_audio_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.maclient.Views.AudioRecordView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#dcd5d5">
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_control"
+            android:layout_marginRight="28dp"
+            android:background="#ffffff"
+            android:text="@string/upload_button"/>
+
+        <!--
+        <com.dd.CircularProgressButton
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_control"
+            android:layout_marginRight="28dp"
+            app:cpb_cornerRadius="24dp"
+            app:cpb_selectorIdle="@color/idle_state_selecor"
+            app:cpb_colorIndicator="#000000"
+            app:cpb_textIdle="@string/upload_button"
+            app:cpb_iconComplete="@drawable/ic_action_complete"
+            app:cpb_iconError="@drawable/ic_action_error"/>
+            -->
+
+        <Button
+            android:id="@+id/btn_control"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_record_start"/>
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/btn_control"
+            android:layout_centerVertical="true"
+            android:text="@string/download_button"
+            android:background="#ffffff"/>
+
+        <!--
+        <com.dd.CircularProgressButton
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/btn_control"
+            android:layout_centerVertical="true"
+            app:cpb_cornerRadius="24dp"
+            app:cpb_selectorIdle="@color/idle_state_selecor"
+            app:cpb_colorIndicator="#000000"
+            app:cpb_textIdle="@string/download_button"
+            app:cpb_iconComplete="@drawable/ic_action_complete"
+            app:cpb_iconError="@drawable/ic_action_error"/>
+            -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AudioRecordView">
+        <attr name="record_time" format="string"/>
+        <attr name="microphone_image" format="reference"/>
+    </declare-styleable>
+</resources>

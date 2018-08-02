@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaClient</string>
+
+    <string name="upload_button">上传录音</string>
+    <string name="download_button">下载旋律</string>
+
+</resources>
